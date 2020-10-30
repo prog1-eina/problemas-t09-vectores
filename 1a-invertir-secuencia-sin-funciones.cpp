@@ -27,6 +27,7 @@ int main() {
      * constante no forma parte del estándar de C++, pero está implementado por
      * los compiladores GNU GCC y MinGW. */
 
+    // Lectura de los datos
     cout << "Introduzca " << n << " enteros: ";
     for (int i = 0; i < n; i++) {
         cin >> datos[i];
