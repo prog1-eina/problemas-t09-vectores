@@ -1,12 +1,24 @@
-﻿/********************************************************************************\
+﻿/******************************************************************************\
  * Curso de Programación 1. Tema 9
  * Autores: Javier Martínez y Miguel Ángel Latre
- * Última revisión: 30 de octubre de 2019
+ * Última revisión: 30 de octubre de 2020
  * Resumen: Solución al problema 2.º planteado en la clase de problemas
  *          del tema 9 (vectores).
-\********************************************************************************/
+ * Nota: El código de esta versión está repartido en dos módulos. Para
+ *       compilarlo, hay que ejecutar el comando
+ *           make invertir-secuencia
+ *       o, en Windows,
+ *           mingw32-make invertir-secuencia
+ *       o ejecutar la tarea "Compilar programa «invertir-secuencia»" de VSC
+ * 
+ *       Para ejecutarlo, una vez compilado, hay que ejecutar el comando
+ *           ./invertir-secuencia
+ *       o, en Windows,
+ *           .\invertir-secuencia.exe
+ *       o ejectuar la tarea "Ejecutar programa «invertir-secuencia»" de VSC
+\******************************************************************************/
 #include <iostream>
-#include "../superiores-media/leer-vector-reales.h"
+#include "leer-vector-reales.hpp"
 using namespace std;
 
 
