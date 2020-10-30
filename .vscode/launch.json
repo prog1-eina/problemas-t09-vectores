@@ -45,6 +45,26 @@
             ],
             "preLaunchTask": "Compilar programa «invertir-secuencia»"
         },
+        {
+            "name": "Depurar programa «superiores-media»",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/superiores-media",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "Compilar programa «superiores-media»"
+        },
 
     ]
 }

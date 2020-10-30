@@ -41,6 +41,29 @@
             "dependsOn": "Compilar programa «invertir-secuencia»",
             "problemMatcher": ["$gcc"],
         },
+        {
+            "label": "Compilar programa «superiores-media»",
+            "type": "shell",
+            "command": "make",
+            "windows": {
+                "command": "mingw32-make.exe",
+            },
+            "args": [
+                "superiores-media"
+            ],
+            "problemMatcher": ["$gcc"],
+            "group": "build",
+        },
+        {
+            "label": "Ejecutar programa «superiores-media»",
+            "type": "shell",
+            "command": "./superiores-media",
+            "windows": {
+                "command": "chcp 65001 ; .\\superiores-media.exe",
+            },
+            "dependsOn": "Compilar programa «superiores-media»",
+            "problemMatcher": ["$gcc"],
+        },
 
     ],
     "version": "2.0.0"
