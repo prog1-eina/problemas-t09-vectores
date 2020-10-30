@@ -1,0 +1,47 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "Compilar el fichero activo (válido solo para programas contenidos en un solo fichero)",
+            "command": "g++",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+        },
+        {
+            "label": "Compilar programa «invertir-secuencia»",
+            "type": "shell",
+            "command": "make",
+            "windows": {
+                "command": "mingw32-make.exe",
+            },
+            "args": [
+                "invertir-secuencia"
+            ],
+            "problemMatcher": ["$gcc"],
+            "group": "build",
+        },
+        {
+            "label": "Ejecutar programa «invertir-secuencia»",
+            "type": "shell",
+            "command": "./invertir-secuencia",
+            "windows": {
+                "command": "chcp 65001 ; .\\invertir-secuencia.exe",
+            },
+            "dependsOn": "Compilar programa «invertir-secuencia»",
+            "problemMatcher": ["$gcc"],
+        },
+
+    ],
+    "version": "2.0.0"
+}
