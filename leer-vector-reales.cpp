@@ -16,9 +16,9 @@ using namespace std;
  *       las primeras «n» componentes del vector «datos», de menor a mayor
  *       índice.
  */
-void leerDatos(double datos[], const int n) {
+void leerDatos(double datos[], const unsigned int n) {
     cout << "Introduzca " << n << " enteros: ";
-    for (int i = 0; i < n; i++) {
+    for (unsigned int i = 0; i < n; i++) {
         cin >> datos[i];
     }
 }

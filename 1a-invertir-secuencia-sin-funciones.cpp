@@ -19,7 +19,7 @@ using namespace std;
  */
 int main() {
     cout << "Introduzca un número positivo: " << flush;
-    int n;
+    unsigned int n;
     cin >> n;
 
     double datos[n];
@@ -29,13 +29,15 @@ int main() {
 
     // Lectura de los datos
     cout << "Introduzca " << n << " enteros: ";
-    for (int i = 0; i < n; i++) {
+    for (unsigned int i = 0; i < n; i++) {
         cin >> datos[i];
     }
 
     cout << "La secuencia en orden inverso es: " << endl;
-    for (int i = n - 1; i > 0; i--) {
+    for (unsigned int i = n - 1; i > 0; i--) {
         cout << datos[i] << ", ";
     }
     cout << datos[0];
+
+    return 0;
 }
