@@ -16,7 +16,7 @@ using namespace std;
 /*
  * Número máximo de enteros con los que trabajaremos
  */
-const int DIMENSION_MAXIMA = 40;
+const unsigned int DIMENSION_MAXIMA = 40;
 
 /*
  * Programa que solicita al usuario, en primer lugar, un número positivo «n»,
@@ -25,7 +25,7 @@ const int DIMENSION_MAXIMA = 40;
  */
 int main() {
     cout << "Introduzca un número positivo: ";
-    int n;
+    unsigned int n;
     cin >> n;
 
     if (n > DIMENSION_MAXIMA) {
@@ -40,12 +40,12 @@ int main() {
     double datos[DIMENSION_MAXIMA];
 
     cout << "Introduzca " << n << " enteros: ";
-    for (int i = 0; i < n; i++) {
+    for (unsigned int i = 0; i < n; i++) {
         cin >> datos[i];
     }
 
     cout << "La secuencia en orden inverso es: " << endl;
-    for (int i = n - 1; i > 0; i--) {
+    for (unsigned int i = n - 1; i > 0; i--) {
         cout << datos[i] << ", ";
     }
     cout << datos[0];

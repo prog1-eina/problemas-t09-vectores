@@ -19,7 +19,7 @@ using namespace std;
  */
 int main() {
     cout << "Introduzca un número positivo: ";
-    int n;
+    unsigned int n;
     cin >> n;
 
     double datos[n];
@@ -29,20 +29,20 @@ int main() {
 
     // Lectura de los datos
     cout << "Introduzca " << n << " enteros: ";
-    for (int i = 0; i < n; i++) {
+    for (unsigned int i = 0; i < n; i++) {
         cin >> datos[i];
     }
     
     // Cálculo de la media
     double suma = 0.0;
-    for (int i = 0; i < n; i++) {
+    for (unsigned int i = 0; i < n; i++) {
         suma += datos[i];
     }
     double media = suma / n;
 
     // Cuenta de los superiores a la media
-    int superiores = 0;
-    for (int i = 0; i < n; i++) {
+    unsigned int superiores = 0;
+    for (unsigned int i = 0; i < n; i++) {
         if (datos[i] >= media) {
             superiores++;
         }
