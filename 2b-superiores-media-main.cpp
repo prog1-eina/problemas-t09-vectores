@@ -1,12 +1,25 @@
-/********************************************************************************\
+/******************************************************************************\
  * Curso de Programación 1. Tema 9
  * Autores: Javier Martínez y Miguel Ángel Latre
  * Última revisión: 30 de octubre de 2019
  * Resumen: Solución al problema 1.º planteado en la clase de problemas
  *          del tema 9 (vectores).
-\********************************************************************************/
+ * Nota: El código de esta versión está repartido en dos módulos. Para
+ *       compilarlo, hay que ejecutar el comando
+ *           make superiores-media
+ *       o, en Windows,
+ *           mingw32-make superiores-media
+ *       o ejecutar la tarea "Compilar programa «superiores-media»" de VSC.
+ * 
+ *       Para ejecutarlo, una vez compilado, hay que ejecutar el comando
+ *           ./superiores-media
+ *       o, en Windows,
+ *           .\superiores-media.exe
+ *       o ejectuar la tarea "Ejecutar programa «superiores-media»" de VSC.
+ 
+\******************************************************************************/
 #include <iostream>
-#include "leer-vector-reales.h"
+#include "leer-vector-reales.hpp"
 using namespace std;
 
 
@@ -51,10 +64,10 @@ int main() {
     int n;
     cin >> n;
 
-    double datos[n];
     /* Advertencia: el dimensionamiento de un vector a partir de
      * un dato no constante no forma parte del estándar de C++, pero está
      * implementado por los compiladores LLVM Clang y GNU GCC. */
+    double datos[n];
 
     leerDatos(datos, n);
     double media = calcularMedia(datos, n);
