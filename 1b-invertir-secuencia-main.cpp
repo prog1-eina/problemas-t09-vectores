@@ -9,13 +9,13 @@
  *           make invertir-secuencia
  *       o, en Windows,
  *           mingw32-make invertir-secuencia
- *       o ejecutar la tarea "Compilar programa «invertir-secuencia»" de VSC
+ *       o ejecutar la tarea "Compilar programa «invertir-secuencia»" de VSC.
  * 
  *       Para ejecutarlo, una vez compilado, hay que ejecutar el comando
  *           ./invertir-secuencia
  *       o, en Windows,
  *           .\invertir-secuencia.exe
- *       o ejectuar la tarea "Ejecutar programa «invertir-secuencia»" de VSC
+ *       o ejectuar la tarea "Ejecutar programa «invertir-secuencia»" de VSC.
 \******************************************************************************/
 #include <iostream>
 #include "leer-vector-reales.hpp"
@@ -27,9 +27,9 @@ using namespace std;
  * Post: Ha escrito los valores de las «n» primeras componentes del vector
  *       «datos» desde la de mayor índice a la de menor.
  */
-void escribirDatosAlReves(const double datos[], const int n) {
+void escribirDatosAlReves(const double datos[], const unsigned int n) {
     cout << "La secuencia en orden inverso es" << endl;
-    for (int i = n - 1; i > 0; i--) {
+    for (unsigned int i = n - 1; i > 0; i--) {
         cout << datos[i] << ", ";
     }
     cout << datos[0];
@@ -42,15 +42,17 @@ void escribirDatosAlReves(const double datos[], const int n) {
  * en orden inverso al introducido.
  */
 int main() {
-    cout << "Introduzca un número positivo: " << flush;
-    int n;
+    cout << "Introduzca un número positivo: ";
+    unsigned int n;
     cin >> n;
 
-    double datos[n];
     /* Advertencia: el dimensionamiento de un vector a partir de
      * un dato no constante no forma parte del estándar de C++, pero está
      * implementado por los compiladores LLVM Clang y GNU GCC. */
+    double datos[n];
 
     leerDatos(datos, n);
     escribirDatosAlReves(datos, n);
+
+    return 0;
 }
