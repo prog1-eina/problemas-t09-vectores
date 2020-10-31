@@ -22,10 +22,10 @@ int main() {
     unsigned int n;
     cin >> n;
 
-    double datos[n];
     /* Advertencia: el dimensionamiento de un vector a partir de un dato no
      * constante no forma parte del estándar de C++, pero está implementado por
      * los compiladores GNU GCC y MinGW. */
+    double datos[n];
 
     // Lectura de los datos
     cout << "Introduzca " << n << " enteros: ";
