@@ -1,7 +1,7 @@
 ﻿/******************************************************************************\
  * Curso de Programación 1. Tema 9
  * Autores: Javier Martínez y Miguel Ángel Latre
- * Última revisión: 30 de octubre de 2020
+ * Última revisión: 4 de noviembre de 2020
  * Resumen: Solución al problema 1.º planteado en la clase de problemas
  *          del tema 9 (vectores) que no utiliza funciones auxiliares.
  * Nota: El programa completo está contenido en este fichero, por lo que puede 
@@ -35,9 +35,19 @@ int main() {
 
     cout << "La secuencia en orden inverso es: " << endl;
     for (unsigned int i = n - 1; i > 0; i--) {
+        // El recorrido inverso de las componentes del vector comienza con el
+        // índice n - 1 y termina con 1. La componente indexada por 0 no la
+        // tratamos en este bucle simplemente para no poner una coma tras el
+        // último dato escrito.        
         cout << datos[i] << ", ";
     }
-    cout << datos[0];
+    
+    // Escritura en la pantalla del último dato (el primero que fue leído).
+    // Lo hacemos solo si el usuario escribió algún dato (n > 0) y,
+    // evidentemente, no ponemos una coma detrás.
+    if (n > 0) {
+        cout << datos[0];
+    }
 
     return 0;
 }
