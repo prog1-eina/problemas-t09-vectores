@@ -28,7 +28,7 @@ int main() {
     double datos[n];
 
     // Lectura de los datos
-    cout << "Introduzca " << n << " enteros: ";
+    cout << "Introduzca " << n << " números reales: ";
     for (unsigned int i = 0; i < n; i++) {
         cin >> datos[i];
     }

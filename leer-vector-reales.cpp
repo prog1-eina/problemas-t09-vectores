@@ -17,7 +17,7 @@ using namespace std;
  *       índice.
  */
 void leerDatos(double datos[], const unsigned int n) {
-    cout << "Introduzca " << n << " enteros: ";
+    cout << "Introduzca " << n << " números reales: ";
     for (unsigned int i = 0; i < n; i++) {
         cin >> datos[i];
     }

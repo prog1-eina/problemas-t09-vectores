@@ -39,7 +39,7 @@ int main() {
      * con las «n» primeras. */
     double datos[DIMENSION_MAXIMA];
 
-    cout << "Introduzca " << n << " enteros: ";
+    cout << "Introduzca " << n << " números reales: ";
     for (unsigned int i = 0; i < n; i++) {
         cin >> datos[i];
     }
