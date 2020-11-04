@@ -1,7 +1,7 @@
 ﻿/******************************************************************************\
  * Curso de Programación 1. Tema 9
  * Autores: Javier Martínez y Miguel Ángel Latre
- * Última revisión: 30 de octubre de 2020
+ * Última revisión: 4 de noviembre de 2020
  * Resumen: Solución al problema 1.º planteado en la clase de problemas
  *          del tema 9 (vectores) que no utiliza funciones auxiliares.
  *          Esta versión sigue rigurosamente el estándar de C++ en cuanto a la
@@ -39,7 +39,7 @@ int main() {
      * con las «n» primeras. */
     double datos[DIMENSION_MAXIMA];
 
-    cout << "Introduzca " << n << " enteros: ";
+    cout << "Introduzca " << n << " números reales: ";
     for (unsigned int i = 0; i < n; i++) {
         cin >> datos[i];
     }
