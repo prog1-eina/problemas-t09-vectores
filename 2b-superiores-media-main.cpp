@@ -15,7 +15,7 @@
  *           ./superiores-media
  *       o, en Windows,
  *           .\superiores-media.exe
- *       o ejectuar la tarea "Ejecutar programa «superiores-media»" de VSC.
+ *       o ejecutar la tarea "Ejecutar programa «superiores-media»" de VSC.
  
 \******************************************************************************/
 #include <iostream>

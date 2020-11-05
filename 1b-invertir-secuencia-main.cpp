@@ -15,7 +15,7 @@
  *           ./invertir-secuencia
  *       o, en Windows,
  *           .\invertir-secuencia.exe
- *       o ejectuar la tarea "Ejecutar programa «invertir-secuencia»" de VSC.
+ *       o ejecutar la tarea "Ejecutar programa «invertir-secuencia»" de VSC.
 \******************************************************************************/
 #include <iostream>
 #include "leer-vector-reales.hpp"
