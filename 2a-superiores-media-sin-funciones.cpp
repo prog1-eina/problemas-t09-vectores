@@ -44,7 +44,7 @@ int main() {
         // Cuenta de los superiores a la media
         unsigned int superiores = 0;
         for (unsigned int i = 0; i < n; i++) {
-            if (datos[i] >= media) {
+            if (datos[i] > media) {
                 superiores++;
             }
         }
