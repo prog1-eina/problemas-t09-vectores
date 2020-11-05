@@ -35,9 +35,19 @@ int main() {
 
     cout << "La secuencia en orden inverso es: " << endl;
     for (unsigned int i = n - 1; i > 0; i--) {
+        // El recorrido inverso de las componentes del vector comienza con el
+        // índice n - 1 y termina con 1. La componente indexada por 0 no la
+        // tratamos en este bucle simplemente para no poner una coma tras el
+        // último dato escrito.        
         cout << datos[i] << ", ";
     }
-    cout << datos[0];
+    
+    // Escritura en la pantalla del último dato (el primero que fue leído).
+    // Lo hacemos solo si el usuario escribió algún dato (n > 0) y,
+    // evidentemente, no ponemos una coma detrás.
+    if (n > 0) {
+        cout << datos[0];
+    }
 
     return 0;
 }
