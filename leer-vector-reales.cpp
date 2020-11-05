@@ -1,7 +1,7 @@
 /********************************************************************************\
  * Curso de Programación 1. Tema 9
  * Autores: Javier Martínez y Miguel Ángel Latre
- * Última revisión: 30 de octubre de 2019
+ * Última revisión: 4 de noviembre de 2020
  * Resumen: Fichero de implementación de un módulo que incluye una función para  
  *          leer desde el teclado un vector de datos de tipo real. Se utiliza en 
  *          las soluciones a los problemas 1.º y 2.º planteados en la clase de 

@@ -40,13 +40,13 @@ double calcularMedia(const double datos[], const unsigned int n) {
 /*
  * Pre:  El vector «datos» tiene al menos «n» componentes y n > 0.
  * Post: Ha devuelto cuántos de los datos almacenados en el vector «datos» son
- *       iguales o superiores al valor de «umbral».
+ *       superiores al valor de «umbral».
  */
 unsigned int contarSuperiores(const double datos[], const unsigned int n, 
                               const double umbral) {
     unsigned int cuenta = 0;
     for (unsigned int i = 0; i < n; i++) {
-        if (datos[i] >= umbral) {
+        if (datos[i] > umbral) {
             cuenta++;
         }
     }
