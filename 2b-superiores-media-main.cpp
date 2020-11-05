@@ -62,20 +62,26 @@ unsigned int contarSuperiores(const double datos[], const unsigned int n,
  */
 int main() {
     cout << "Introduzca un número positivo: ";
-    unsigned int n;
+    int n;
     cin >> n;
 
-    /* Advertencia: el dimensionamiento de un vector a partir de
-     * un dato no constante no forma parte del estándar de C++, pero está
-     * implementado por los compiladores LLVM Clang y GNU GCC. */
-    double datos[n];
+    if (n > 0) {
+        /* Advertencia: el dimensionamiento de un vector a partir de
+        * un dato no constante no forma parte del estándar de C++, pero está
+        * implementado por los compiladores LLVM Clang y GNU GCC. */
+        double datos[n];
 
-    leerDatos(datos, n);
-    double media = calcularMedia(datos, n);
-    unsigned int superiores = contarSuperiores(datos, n, media);
-    cout << "La media de los datos introducidos es " << media << " y " 
-         << superiores
-         << " de ellos son superiores o iguales a la media." << endl;
-         
-    return 0;
+        leerDatos(datos, n);
+        double media = calcularMedia(datos, n);
+        unsigned int superiores = contarSuperiores(datos, n, media);
+        cout << "La media de los datos introducidos es " << media << " y " 
+            << superiores
+            << " de ellos son superiores o iguales a la media." << endl;
+            
+        return 0;
+    }
+    else {
+        cout << "El número de datos tiene que ser mayor que 0." << endl;
+        return 1;
+    }
 }
