@@ -18,7 +18,7 @@ Del primer problema (`invertir-secuencia`), se proporcionan tres soluciones:
 
   Solución que no utiliza funciones auxiliares (el programa completo está contenido en el fichero).
   
-  Esta solución dimensiona un vector a partir de una variable. Esta forma de dimensionamiento no forma parte del estándar de C++, pero es muy útul en ciertas ocasiones y está implementada por los compiladores GNU GCC y MinGW.
+  Esta solución dimensiona un vector a partir de una variable. Esta forma de dimensionamiento no forma parte del estándar de C++, pero es muy útil en ciertas ocasiones y está implementada por los compiladores GNU GCC y MinGW.
 
 - `1a-invertir-secuencia-sin-funciones-estandar.cpp`
 
