@@ -56,13 +56,19 @@ int main() {
     unsigned int n;
     cin >> n;
 
-    /* Advertencia: el dimensionamiento de un vector a partir de
-     * un dato no constante no forma parte del estándar de C++, pero está
-     * implementado por los compiladores LLVM Clang y GNU GCC. */
-    double datos[n];
+    if (n > 0) {
+        /* Advertencia: el dimensionamiento de un vector a partir de
+        * un dato no constante no forma parte del estándar de C++, pero está
+        * implementado por los compiladores LLVM Clang y GNU GCC. */
+        double datos[n];
 
-    leerDatos(datos, n);
-    escribirDatosAlReves(datos, n);
+        leerDatos(datos, n);
+        escribirDatosAlReves(datos, n);
 
-    return 0;
+        return 0;
+    }
+    else {
+        cout << "El número de datos tiene que ser mayor que 0." << endl;
+        return 1;
+    }
 }
