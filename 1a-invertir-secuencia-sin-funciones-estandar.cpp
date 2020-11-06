@@ -28,36 +28,38 @@ int main() {
     unsigned int n;
     cin >> n;
 
-    if (n > DIMENSION_MAXIMA) {
-        n = DIMENSION_MAXIMA;
-    }
+    if (0 < n && n <= DIMENSION_MAXIMA) {
+        /* En esta versión, el dimensionamiento del vector se hace a partir de un 
+        * dato constante conocido en tiempo de compilación, de acuerdo con el 
+        * estándar de C++. Se va a trabajar con un vector «sobredimensionado»: de 
+        * las «DIMENSION_MAXIMA» que tiene el vector «datos», se va a trabajar solo 
+        * con las «n» primeras. */
+        double datos[DIMENSION_MAXIMA];
 
-    /* En esta versión, el dimensionamiento del vector se hace a partir de un 
-     * dato constante conocido en tiempo de compilación, de acuerdo con el 
-     * estándar de C++. Se va a trabajar con un vector «sobredimensionado»: de 
-     * las «DIMENSION_MAXIMA» que tiene el vector «datos», se va a trabajar solo 
-     * con las «n» primeras. */
-    double datos[DIMENSION_MAXIMA];
+        cout << "Introduzca " << n << " números reales: ";
+        for (unsigned int i = 0; i < n; i++) {
+            cin >> datos[i];
+        }
 
-    cout << "Introduzca " << n << " números reales: ";
-    for (unsigned int i = 0; i < n; i++) {
-        cin >> datos[i];
-    }
+        cout << "La secuencia en orden inverso es: " << endl;
+        for (unsigned int i = n - 1; i > 0; i--) {
+            // El recorrido inverso de las componentes del vector comienza con el
+            // índice n - 1 y termina con 1. La componente indexada por 0 no la
+            // tratamos en este bucle simplemente para no poner una coma tras el
+            // último dato escrito.
+            cout << datos[i] << ", ";
+        }
 
-    cout << "La secuencia en orden inverso es: " << endl;
-    for (unsigned int i = n - 1; i > 0; i--) {
-        // El recorrido inverso de las componentes del vector comienza con el
-        // índice n - 1 y termina con 1. La componente indexada por 0 no la
-        // tratamos en este bucle simplemente para no poner una coma tras el
-        // último dato escrito.
-        cout << datos[i] << ", ";
+        // Escritura en la pantalla del último dato (el primero que fue leído).
+        // Evidentemente, no ponemos una coma detrás.
+        if (n > 0) {
+            cout << datos[0];
+        }
+        return 0;
     }
-
-    // Escritura en la pantalla del último dato (el primero que fue leído).
-    // Lo hacemos solo si el usuario escribió algún dato (n > 0) y,
-    // evidentemente, no ponemos una coma detrás.
-    if (n > 0) {
-        cout << datos[0];
+    else {
+        cout << "El número de datos tiene que ser mayor que 0 y "
+             << "menor o igual que " << DIMENSION_MAXIMA << "." << endl;
+        return 1;
     }
-    return 0;
 }
