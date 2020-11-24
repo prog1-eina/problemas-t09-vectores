@@ -47,7 +47,7 @@ void copiar(const int original[], const unsigned int n, int copia[]) {
 /********************************** Problema 5 ********************************/
 /*
  * Pre:  Los vectores «v» y «w» tienen al menos «n» componentes cada uno.
- * Post: Ha devuelto ture si y solo si los datos de las primeras «n» componentes 
+ * Post: Ha devuelto true si y solo si los datos de las primeras «n» componentes 
  *       de los vectores «v» y «w» son iguales.
  */
 bool sonIguales(const int v[], const int w[], const unsigned int n) {
@@ -89,10 +89,10 @@ int moda(const int v[], const unsigned int n) {
     unsigned int repeticionesDeLaModa = numeroRepeticiones(v, 0, n);
 
     for (unsigned int i = 1; i < n; i++) {
-        unsigned int reptecionesDelDatoIesimo = numeroRepeticiones(v, i, n);
-        if (reptecionesDelDatoIesimo > repeticionesDeLaModa) {
+        unsigned int repeticionesDelDatoIesimo = numeroRepeticiones(v, i, n);
+        if (repeticionesDelDatoIesimo > repeticionesDeLaModa) {
             moda = v[i];
-            repeticionesDeLaModa = reptecionesDelDatoIesimo;
+            repeticionesDeLaModa = repeticionesDelDatoIesimo;
         }
     }
     return moda;
