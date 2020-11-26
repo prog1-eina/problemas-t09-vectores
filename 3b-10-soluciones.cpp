@@ -81,7 +81,7 @@ unsigned int numeroRepeticiones(const int v[], const unsigned int i,
 
 
 /*
- * Pre:  El vector «v» tiene «n» componentes.
+ * Pre:  El vector «v» tiene «n» componentes y «n» > 0.
  * Post: Ha devuelto la moda de los datos almacenados en el vector «v».
  */
 int moda(const int v[], const unsigned int n) {
@@ -126,9 +126,9 @@ bool estaOrdenada(const int v[], const unsigned int n) {
     // encontrado un par de componentes consecutivas en el orden
     // incorrecto.
     bool ordenada = true;
-    unsigned int i = 0;
-    while (ordenada && i < n - 1) {
-        ordenada = (v[i] <= v[i + 1]);
+    unsigned int i = 1;
+    while (ordenada && i < n) {
+        ordenada = (v[i - 1] <= v[i]);
         i++;
     }
     return ordenada;
