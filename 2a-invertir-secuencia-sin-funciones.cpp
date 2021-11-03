@@ -25,7 +25,7 @@ using namespace std;
  */
 int main() {
     cout << "Introduzca un número positivo: " << flush;
-    unsigned n;
+    int n;
     cin >> n;
 
     if (n > 0) {

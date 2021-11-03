@@ -53,7 +53,7 @@ void escribirDatosAlReves(const double datos[], const unsigned n) {
  */
 int main() {
     cout << "Introduzca un número positivo: ";
-    unsigned n;
+    int n;
     cin >> n;
 
     if (n > 0) {
