@@ -2,7 +2,7 @@
  * Curso de Programación 1. Tema 9
  * Autores: Javier Martínez y Miguel Ángel Latre
  * Última revisión: 30 de octubre de 2019
- * Resumen: Solución al problema 1.º planteado en la clase de problemas
+ * Resumen: Solución al problema 3 planteado en la clase de problemas
  *          del tema 9 (vectores).
  * Nota: El código de esta versión está repartido en dos módulos. Para
  *       compilarlo, hay que ejecutar el comando
