@@ -17,12 +17,12 @@ using namespace std;
  * son estrictamente positivos.
  */
 int main() {
-    const unsigned int NUM_DATOS = 21;
+    const unsigned NUM_DATOS = 21;
     const int VECTOR[NUM_DATOS] = {1, -5, -8, 6, 8, -3, -4, -6, 6, -1, 5, -8, 1,
             9, 5, -9, 5, 8, 9, -2, -9};
 
-    unsigned int cuenta = 0;
-    for (unsigned int i = 0; i < NUM_DATOS; i++) {
+    unsigned cuenta = 0;
+    for (unsigned i = 0; i < NUM_DATOS; i++) {
         if (VECTOR[i] > 0) {
             cuenta++;
         }

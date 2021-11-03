@@ -30,20 +30,20 @@ int main() {
 
         // Lectura de los datos
         cout << "Introduzca " << n << " números reales: ";
-        for (unsigned int i = 0; i < n; i++) {
+        for (unsigned i = 0; i < n; i++) {
             cin >> datos[i];
         }
         
         // Cálculo de la media
         double suma = 0.0;
-        for (unsigned int i = 0; i < n; i++) {
+        for (unsigned i = 0; i < n; i++) {
             suma += datos[i];
         }
         double media = suma / n;
 
         // Cuenta de los superiores a la media
-        unsigned int superiores = 0;
-        for (unsigned int i = 0; i < n; i++) {
+        unsigned superiores = 0;
+        for (unsigned i = 0; i < n; i++) {
             if (datos[i] > media) {
                 superiores++;
             }

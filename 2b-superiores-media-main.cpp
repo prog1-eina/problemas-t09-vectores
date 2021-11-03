@@ -28,9 +28,9 @@ using namespace std;
  * Post: Ha devuelto el valor medio de los valores almacenados en las
  *       componentes de «datos».
  */
-double calcularMedia(const double datos[], const unsigned int n) {
+double calcularMedia(const double datos[], const unsigned n) {
     double suma = 0.0;
-    for (unsigned int i = 0; i < n; i++) {
+    for (unsigned i = 0; i < n; i++) {
         suma += datos[i];
     }
     return suma / n;
@@ -42,10 +42,10 @@ double calcularMedia(const double datos[], const unsigned int n) {
  * Post: Ha devuelto cuántos de los datos almacenados en el vector «datos» son
  *       superiores al valor de «umbral».
  */
-unsigned int contarSuperiores(const double datos[], const unsigned int n, 
+unsigned contarSuperiores(const double datos[], const unsigned n, 
                               const double umbral) {
-    unsigned int cuenta = 0;
-    for (unsigned int i = 0; i < n; i++) {
+    unsigned cuenta = 0;
+    for (unsigned i = 0; i < n; i++) {
         if (datos[i] > umbral) {
             cuenta++;
         }
@@ -73,7 +73,7 @@ int main() {
 
         leerDatos(datos, n);
         double media = calcularMedia(datos, n);
-        unsigned int superiores = contarSuperiores(datos, n, media);
+        unsigned superiores = contarSuperiores(datos, n, media);
         cout << "La media de los datos introducidos es " << media << " y " 
             << superiores
             << " de ellos son superiores o iguales a la media." << endl;

@@ -14,4 +14,4 @@
  *       las primeras «n» componentes del vector «datos», de menor a mayor
  *       índice.
  */
-void leerDatos(double datos[], const unsigned int n);
+void leerDatos(double datos[], const unsigned n);

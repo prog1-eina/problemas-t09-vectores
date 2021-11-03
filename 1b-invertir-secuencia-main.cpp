@@ -27,9 +27,9 @@ using namespace std;
  * Post: Ha escrito los valores de las «n» primeras componentes del vector
  *       «datos» desde la de mayor índice a la de menor.
  */
-void escribirDatosAlReves(const double datos[], const unsigned int n) {
+void escribirDatosAlReves(const double datos[], const unsigned n) {
     cout << "La secuencia en orden inverso es" << endl;
-    for (unsigned int i = n - 1; i > 0; i--) {
+    for (unsigned i = n - 1; i > 0; i--) {
         // El recorrido inverso de las componentes del vector comienza con el
         // índice n - 1 y termina con 1. La componente indexada por 0 no la
         // tratamos en este bucle simplemente para no poner una coma tras el
@@ -53,7 +53,7 @@ void escribirDatosAlReves(const double datos[], const unsigned int n) {
  */
 int main() {
     cout << "Introduzca un número positivo: ";
-    unsigned int n;
+    unsigned n;
     cin >> n;
 
     if (n > 0) {

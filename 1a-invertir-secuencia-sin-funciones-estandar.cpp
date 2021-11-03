@@ -16,7 +16,7 @@ using namespace std;
 /*
  * Número máximo de enteros con los que trabajaremos
  */
-const unsigned int DIMENSION_MAXIMA = 40;
+const unsigned DIMENSION_MAXIMA = 40;
 
 /*
  * Programa que solicita al usuario, en primer lugar, un número positivo «n»,
@@ -25,7 +25,7 @@ const unsigned int DIMENSION_MAXIMA = 40;
  */
 int main() {
     cout << "Introduzca un número positivo: ";
-    unsigned int n;
+    unsigned n;
     cin >> n;
 
     if (0 < n && n <= DIMENSION_MAXIMA) {
@@ -37,12 +37,12 @@ int main() {
         double datos[DIMENSION_MAXIMA];
 
         cout << "Introduzca " << n << " números reales: ";
-        for (unsigned int i = 0; i < n; i++) {
+        for (unsigned i = 0; i < n; i++) {
             cin >> datos[i];
         }
 
         cout << "La secuencia en orden inverso es: " << endl;
-        for (unsigned int i = n - 1; i > 0; i--) {
+        for (unsigned i = n - 1; i > 0; i--) {
             // El recorrido inverso de las componentes del vector comienza con el
             // índice n - 1 y termina con 1. La componente indexada por 0 no la
             // tratamos en este bucle simplemente para no poner una coma tras el
