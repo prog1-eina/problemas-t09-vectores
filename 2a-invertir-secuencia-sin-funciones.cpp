@@ -24,7 +24,7 @@ using namespace std;
  * en orden inverso al introducido.
  */
 int main() {
-    cout << "Introduzca un número positivo: " << flush;
+    cout << "Introduzca un número positivo: ";
     int n;
     cin >> n;
 
@@ -51,7 +51,7 @@ int main() {
         
         // Escritura en la pantalla del último dato (el primero que fue leído).
         // Evidentemente, no ponemos una coma detrás.
-        cout << datos[0];
+        cout << datos[0] << endl;
         return 0;
     }
     else {
