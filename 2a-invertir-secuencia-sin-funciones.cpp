@@ -11,7 +11,7 @@
  *       así, pero podríamos tener problemas de portabilidad al compilar con
  *       otro compilador.
  * Nota: El programa completo está contenido en este fichero, por lo que puede 
- *       compilarse y ejecutarse con la extensión Run Code de Visual Studio 
+ *       compilarse y ejecutarse con la extensión Code Runner de Visual Studio 
  *       Code, tal y como se hacía en las prácticas 1 y 2.
 \******************************************************************************/
 #include <iostream>
