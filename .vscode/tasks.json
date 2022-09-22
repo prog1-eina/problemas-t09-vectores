@@ -6,6 +6,8 @@
             "command": "g++",
             "args": [
                 "-g",
+                "-Wall",
+                "-Wextra",
                 "${file}",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}"
