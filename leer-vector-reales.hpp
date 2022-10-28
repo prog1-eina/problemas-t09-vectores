@@ -10,8 +10,7 @@
 
 /*
  * Pre:  El vector «datos» tiene al menos «n» componentes.
- * Post: Ha solicitado «n» datos de tipo real al usuario y los ha copiado en
- *       las primeras «n» componentes del vector «datos», de menor a mayor
- *       índice.
+ * Post: Solicita «n» datos de tipo real al usuario y los copia en las primeras
+ *       «n» componentes del vector «datos», de menor a mayor índice.
  */
 void leerDatos(double datos[], const unsigned n);

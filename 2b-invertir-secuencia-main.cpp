@@ -24,7 +24,7 @@ using namespace std;
 
 /*
  * Pre:  El vector «datos» tiene al menos «n» componentes y n > 0.
- * Post: Ha escrito los valores de las «n» primeras componentes del vector
+ * Post: Escribe los valores de las «n» primeras componentes del vector
  *       «datos» desde la de mayor índice a la de menor.
  */
 void escribirDatosAlReves(const double datos[], const unsigned n) {

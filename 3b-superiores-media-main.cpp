@@ -24,7 +24,7 @@ using namespace std;
 
 /*
  * Pre:  «datos» tiene «n» componentes.
- * Post: Ha devuelto el valor medio de los valores almacenados en las
+ * Post: Devuelve el valor medio de los valores almacenados en las
  *       componentes de «datos».
  */
 double calcularMedia(const double datos[], const unsigned n) {
@@ -38,7 +38,7 @@ double calcularMedia(const double datos[], const unsigned n) {
 
 /*
  * Pre:  El vector «datos» tiene al menos «n» componentes y n > 0.
- * Post: Ha devuelto cuántos de los datos almacenados en el vector «datos» son
+ * Post: Devuelve cuántos de los datos almacenados en el vector «datos» son
  *       superiores al valor de «umbral».
  */
 unsigned contarSuperiores(const double datos[], const unsigned n, 
