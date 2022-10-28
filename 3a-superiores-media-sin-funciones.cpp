@@ -4,9 +4,15 @@
  * Última revisión: 30 de octubre de 2020
  * Resumen: Solución al problema 3 planteado en la clase de problemas
  *          del tema 9 (vectores) que no utiliza funciones auxiliares.
- * Nota: El programa completo está contenido en este fichero, por lo que puede 
- *       compilarse y ejecutarse con la extensión Code Runner de Visual Studio 
- *       Code, tal y como se hacía en las prácticas 1 y 2.
+ * Nota: El programa completo está contenido en este fichero, por lo que puede 
+ *       compilarse y ejecutarse con la extensión Code Runner de Visual Studio 
+ *       Code.
+ *       También puede compilarse desde la terminal través de la orden
+ *           g++ -Wall -Wextra 3a-superiores-media-sin-funciones.cpp -o 3a-sups
+ *       y ejecutarse en Windows a través de la orden
+ *           .\3a-sups.exe
+ *       o en Linux y macOS
+ *           ./3a-sups
 \******************************************************************************/
 #include <iostream>
 using namespace std;
