@@ -16,7 +16,6 @@
  *       o, en Windows,
  *           .\superiores-media.exe
  *       o ejecutar la tarea "Ejecutar programa «superiores-media»" de VSC.
- 
 \******************************************************************************/
 #include <iostream>
 #include "leer-vector-reales.hpp"
