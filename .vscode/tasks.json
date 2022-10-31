@@ -27,6 +27,16 @@
             },
         },
         {
+            "type": "shell",
+            "label": "Ejecutar fichero activo en el editor (válido solo para programas contenidos en un solo fichero)",
+            "command": "./${fileBasenameNoExtension}",
+            "windows": {
+                "command": "chcp 65001 ; .\\${fileBasenameNoExtension}.exe"
+            },
+            "dependsOn": "Compilar fichero activo en el editor (válido solo para programas contenidos en un solo fichero)",
+            "problemMatcher": []
+        },
+        {
             "label": "Compilar programa «invertir-secuencia»",
             "type": "shell",
             "command": "make",
