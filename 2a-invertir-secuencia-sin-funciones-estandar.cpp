@@ -63,8 +63,7 @@ int main() {
             cout << datos[0];
         }
         return 0;
-    }
-    else {
+    } else {
         cout << "El número de datos tiene que ser mayor que 0 y "
              << "menor o igual que " << DIMENSION_MAXIMA << "." << endl;
         return 1;

@@ -61,8 +61,7 @@ int main() {
             << " de ellos son superiores o iguales a la media." << endl;
             
         return 0;
-    }
-    else {
+    } else {
         cout << "El número de datos tiene que ser mayor que 0." << endl;
         return 1;
     }

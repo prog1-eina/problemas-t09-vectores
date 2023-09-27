@@ -66,8 +66,7 @@ int main() {
         escribirDatosAlReves(datos, n);
 
         return 0;
-    }
-    else {
+    } else {
         cout << "El número de datos tiene que ser mayor que 0." << endl;
         return 1;
     }

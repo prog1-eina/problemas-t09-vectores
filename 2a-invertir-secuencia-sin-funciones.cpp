@@ -59,8 +59,7 @@ int main() {
         // Evidentemente, no ponemos una coma detrás.
         cout << datos[0] << endl;
         return 0;
-    }
-    else {
+    } else {
         cout << "El número de datos tiene que ser mayor que 0." << endl;
         return 1;
     }
