@@ -4,15 +4,15 @@
  * Última revisión: 30 de octubre de 2020
  * Resumen: Solución al problema 1 planteado en la clase de problemas
  *          del tema 9 (vectores).
- * Nota: El programa completo está contenido en este fichero, por lo que puede 
- *       compilarse y ejecutarse con la extensión Code Runner de Visual Studio 
- *       Code.
- *       También puede compilarse desde la terminal través de la orden
- *           g++ -Wall -Wextra 1-positivos.cpp -o 1-positivos
- *       y ejecutarse en Windows a través de la orden
- *           .\1-positivos.exe
- *       o en Linux y macOS
- *           ./1-positivos
+ * Nota: El programa completo está contenido en este fichero, por lo que puede 
+ *       compilarse y ejecutarse con la extensión Code Runner de Visual Studio 
+ *       Code.
+ *       También puede compilarse desde la terminal través de la orden
+ *           g++ -Wall -Wextra 1-positivos.cpp -o 1-positivos
+ *       y ejecutarse en Windows a través de la orden
+ *           .\1-positivos.exe
+ *       o en Linux y macOS
+ *           ./1-positivos
 \******************************************************************************/
 #include <iostream>
 using namespace std;

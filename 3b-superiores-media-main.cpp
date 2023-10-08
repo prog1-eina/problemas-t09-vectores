@@ -7,9 +7,7 @@
  * Nota: El código de esta versión está repartido en dos módulos. Para
  *       compilarlo, hay que ejecutar el comando
  *           make superiores-media
- *       o, en Windows,
- *           mingw32-make superiores-media
- *       o ejecutar la tarea "Compilar programa «superiores-media»" de VSC.
+  *       o ejecutar la tarea "Compilar programa «superiores-media»" de VSC.
  * 
  *       Para ejecutarlo, una vez compilado, hay que ejecutar el comando
  *           ./superiores-media

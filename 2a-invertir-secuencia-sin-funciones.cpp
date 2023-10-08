@@ -10,15 +10,15 @@
  *       evaluar una expresión en tiempo de ejecución. Es más cómodo trabajar
  *       así, pero podríamos tener problemas de portabilidad al compilar con
  *       otro compilador.
- * Nota: El programa completo está contenido en este fichero, por lo que puede 
- *       compilarse y ejecutarse con la extensión Code Runner de Visual Studio 
- *       Code.
- *       También puede compilarse desde la terminal través de la orden
- *           g++ -Wall -Wextra 2a-*-funciones.cpp -o invertir
- *       y ejecutarse en Windows a través de la orden
- *           .\invertir.exe
- *       o en Linux y macOS
- *           ./invertir
+ * Nota: El programa completo está contenido en este fichero, por lo que puede 
+ *       compilarse y ejecutarse con la extensión Code Runner de Visual Studio 
+ *       Code.
+ *       También puede compilarse desde la terminal través de la orden
+ *           g++ -Wall -Wextra 2a-*-funciones.cpp -o invertir
+ *       y ejecutarse en Windows a través de la orden
+ *           .\invertir.exe
+ *       o en Linux y macOS
+ *           ./invertir
 \******************************************************************************/
 #include <iostream>
 using namespace std;

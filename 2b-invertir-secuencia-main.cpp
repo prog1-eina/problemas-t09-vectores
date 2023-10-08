@@ -7,9 +7,7 @@
  * Nota: El código de esta versión está repartido en dos módulos. Para
  *       compilarlo, hay que ejecutar el comando
  *           make invertir-secuencia
- *       o, en Windows,
- *           mingw32-make invertir-secuencia
- *       o ejecutar la tarea "Compilar programa «invertir-secuencia»" de VSC.
+  *       o ejecutar la tarea "Compilar programa «invertir-secuencia»" de VSC.
  * 
  *       Para ejecutarlo, una vez compilado, hay que ejecutar el comando
  *           ./invertir-secuencia

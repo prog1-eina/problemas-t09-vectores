@@ -7,15 +7,15 @@
  * Nota: Esta versión sigue rigurosamente el estándar de C++ en cuanto a la
  *       declaración de vectores (la dimensión tiene que ser una expresión
  *       constante conocida en tiempo de compilación).
- * Nota: El programa completo está contenido en este fichero, por lo que puede 
- *       compilarse y ejecutarse con la extensión Code Runner de Visual Studio 
- *       Code.
- *       También puede compilarse desde la terminal través de la orden
- *           g++ -Wall -Wextra 2a-*-estandar.cpp -o invertir-std
- *       y ejecutarse en Windows a través de la orden
- *           .\invertir-std.exe
- *       o en Linux y macOS
- *           ./invertir-std
+ * Nota: El programa completo está contenido en este fichero, por lo que puede 
+ *       compilarse y ejecutarse con la extensión Code Runner de Visual Studio 
+ *       Code.
+ *       También puede compilarse desde la terminal través de la orden
+ *           g++ -Wall -Wextra 2a-*-estandar.cpp -o invertir-std
+ *       y ejecutarse en Windows a través de la orden
+ *           .\invertir-std.exe
+ *       o en Linux y macOS
+ *           ./invertir-std
 \******************************************************************************/
 #include <iostream>
 using namespace std;

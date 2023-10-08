@@ -40,9 +40,6 @@
             "label": "Compilar programa «invertir-secuencia»",
             "type": "shell",
             "command": "make",
-            "windows": {
-                "command": "mingw32-make.exe",
-            },
             "args": [
                 "invertir-secuencia"
             ],
@@ -63,9 +60,6 @@
             "label": "Compilar programa «superiores-media»",
             "type": "shell",
             "command": "make",
-            "windows": {
-                "command": "mingw32-make.exe",
-            },
             "args": [
                 "superiores-media"
             ],

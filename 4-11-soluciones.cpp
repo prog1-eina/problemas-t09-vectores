@@ -4,15 +4,15 @@
  * Última revisión: 31 de octubre de 2022
  * Resumen: Soluciones a los problemas 4 y 7 a 11 de Programación 1 planteados
  *          en la clase de problemas del tema 9 (vectores).
- * Nota: El programa completo está contenido en este fichero, por lo que puede 
- *       compilarse y ejecutarse con la extensión Code Runner de Visual Studio 
- *       Code.
- *       También puede compilarse desde la terminal través de la orden
- *           g++ -Wall -Wextra 4-11-soluciones.cpp -o 4-11-soluciones
- *       y ejecutarse en Windows a través de la orden
- *           .\4-11-soluciones.exe
- *       o en Linux y macOS
- *           ./4-11-soluciones
+ * Nota: El programa completo está contenido en este fichero, por lo que puede 
+ *       compilarse y ejecutarse con la extensión Code Runner de Visual Studio 
+ *       Code.
+ *       También puede compilarse desde la terminal través de la orden
+ *           g++ -Wall -Wextra 4-11-soluciones.cpp -o 4-11-soluciones
+ *       y ejecutarse en Windows a través de la orden
+ *           .\4-11-soluciones.exe
+ *       o en Linux y macOS
+ *           ./4-11-soluciones
 \******************************************************************************/
 #include <iostream>
 using namespace std;
