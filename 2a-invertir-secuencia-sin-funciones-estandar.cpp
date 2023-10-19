@@ -32,7 +32,7 @@ const unsigned DIMENSION_MAXIMA = 40;
  */
 int main() {
     cout << "Introduzca un número positivo: ";
-    unsigned n;
+    int n;
     cin >> n;
 
     if (0 < n && n <= DIMENSION_MAXIMA) {
