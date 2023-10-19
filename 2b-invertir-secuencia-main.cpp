@@ -56,8 +56,8 @@ int main() {
 
     if (n > 0) {
         /* Advertencia: el dimensionamiento de un vector a partir de
-        * un dato no constante no forma parte del estándar de C++, pero está
-        * implementado por los compiladores LLVM Clang y GNU GCC. */
+         * un dato no constante no forma parte del estándar de C++, pero está
+         * implementado por los compiladores LLVM Clang y GNU GCC. */
         double datos[n];
 
         leerDatos(datos, n);
