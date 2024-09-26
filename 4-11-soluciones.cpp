@@ -133,7 +133,7 @@ bool estaOrdenada(const int v[], const unsigned n) {
  *       numPositivos = Np.
  */
 void copiaPositivos(const int T[], const unsigned n,
-                    int P[], unsigned& numPositivos) {
+                    int P[], unsigned &numPositivos) {
     numPositivos = 0;
     for (unsigned i = 0; i < n; i++) {
         if (T[i] > 0) {
