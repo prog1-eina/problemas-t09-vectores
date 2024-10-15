@@ -31,7 +31,8 @@
             "label": "Ejecutar fichero activo en el editor (válido solo para programas contenidos en un solo fichero)",
             "command": "./${fileBasenameNoExtension}",
             "windows": {
-                "command": "chcp 65001 ; .\\${fileBasenameNoExtension}.exe"
+                "command": "cmd",
+                "args": ["/c", "chcp 65001 && .\\${fileBasenameNoExtension}.exe"]
             },
             "dependsOn": "Compilar fichero activo en el editor (válido solo para programas contenidos en un solo fichero)",
             "problemMatcher": []
@@ -51,7 +52,8 @@
             "type": "shell",
             "command": "./invertir-secuencia",
             "windows": {
-                "command": "chcp 65001 ; .\\invertir-secuencia.exe",
+                "command": "cmd",
+                "args": ["/c", "chcp 65001 && .\\invertir-secuencia.exe"]
             },
             "dependsOn": "Compilar programa «invertir-secuencia»",
             "problemMatcher": ["$gcc"],
@@ -71,7 +73,8 @@
             "type": "shell",
             "command": "./superiores-media",
             "windows": {
-                "command": "chcp 65001 ; .\\superiores-media.exe",
+                "command": "cmd",
+                "args": ["/c", "chcp 65001 && .\\superiores-media.exe"]
             },
             "dependsOn": "Compilar programa «superiores-media»",
             "problemMatcher": ["$gcc"],
