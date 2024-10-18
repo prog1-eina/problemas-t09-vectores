@@ -53,8 +53,7 @@ unsigned numPositivos(const int v[], const unsigned n) {
  * Post: Devuelve el número de veces que está repetido el dato
  *       «i»-ésimo del vector «v».
  */
-unsigned numeroRepeticiones(const int v[], const unsigned i, 
-                                const unsigned n) {
+unsigned numeroRepeticiones(const int v[], const unsigned i, const unsigned n) {
     unsigned repeticiones = 0;
     for (unsigned j = 0; j < n; j++) {
         if (v[i] == v[j]) {
@@ -108,10 +107,9 @@ bool esta(const int datos[], const unsigned n, const int buscado) {
  *       de forma no decreciente.
  */
 bool estaOrdenada(const int v[], const unsigned n) {
-    // ordenada==false cuando se tiene la CERTEZA de que no está
-    // ordenada de forma no decreciente, es decir, cuando se han
-    // encontrado un par de componentes consecutivas en el orden
-    // incorrecto.
+    // ordenada == false cuando se tiene la CERTEZA de que no está ordenada de
+    // forma no decreciente, es decir, cuando se han encontrado un par de
+    // componentes consecutivas en el orden incorrecto.
     bool ordenada = true;
     unsigned i = 1;
     while (ordenada && i < n) {
@@ -181,7 +179,7 @@ void kolakoski(unsigned secuencia[], const unsigned longitud) {
 
         // Se actualiza el número de bloques y dígitos de la secuencia
         // obtenidos
-        numDigitos += secuencia[numBloques-1];
+        numDigitos += secuencia[numBloques - 1];
         numBloques++;
     }
 }
