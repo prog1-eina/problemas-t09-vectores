@@ -1,12 +1,12 @@
-/******************************************************************************\
+/******************************************************************************
  * Curso de Programación 1. Tema 9
  * Autores: Javier Martínez y Miguel Ángel Latre
  * Última revisión: 4 de noviembre de 2020
- * Resumen: Fichero de implementación de un módulo que incluye una función para  
- *          leer desde el teclado un vector de datos de tipo real. Se utiliza en 
- *          las soluciones a los problemas 2 y 3 planteados en la clase de 
+ * Resumen: Fichero de implementación de un módulo que incluye una función para
+ *          leer desde el teclado un vector de datos de tipo real. Se utiliza
+ *          en las soluciones a los problemas 2 y 3 planteados en la clase de 
  *          problemas del tema 9 (vectores).
-\******************************************************************************/
+ *****************************************************************************/
 #include <iostream>
 using namespace std;
 

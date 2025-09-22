@@ -1,4 +1,4 @@
-/******************************************************************************\
+/******************************************************************************
  * Curso de Programación 1. Tema 9
  * Autores: Javier Martínez y Miguel Ángel Latre
  * Última revisión: 30 de octubre de 2020
@@ -13,7 +13,7 @@
  *           .\1-positivos.exe
  *       o en Linux y macOS
  *           ./1-positivos
-\******************************************************************************/
+ *****************************************************************************/
 #include <iostream>
 using namespace std;
 
@@ -24,8 +24,8 @@ using namespace std;
  */
 int main() {
     const unsigned NUM_DATOS = 21;
-    const int VECTOR[NUM_DATOS] = {1, -5, -8, 6, 8, -3, -4, -6, 6, -1, 5, -8, 1,
-            9, 5, -9, 5, 8, 9, -2, -9};
+    const int VECTOR[NUM_DATOS] = {1, -5, -8, 6, 8, -3, -4, -6, 6, -1, 5, -8,
+            1, 9, 5, -9, 5, 8, 9, -2, -9};
 
     unsigned cuenta = 0;
     for (unsigned i = 0; i < NUM_DATOS; i++) {

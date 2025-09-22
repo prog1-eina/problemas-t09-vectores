@@ -1,4 +1,4 @@
-/******************************************************************************\
+/******************************************************************************
  * Curso de Programación 1. Tema 9
  * Autores: Javier Martínez y Miguel Ángel Latre
  * Última revisión: 30 de octubre de 2020
@@ -13,15 +13,14 @@
  *           .\3a-sups.exe
  *       o en Linux y macOS
  *           ./3a-sups
-\******************************************************************************/
+ *****************************************************************************/
 #include <iostream>
 using namespace std;
 
 /*
  * Programa que solicita al usuario, en primer lugar, un número positivo «n»,
- * luego solicita «n» datos de tipo real y por último, escribe en la pantalla el
- * valor medio de los datos introducidos y cuántos de ellos son superiores a la
- * media.
+ * luego solicita «n» datos de tipo real y por último los escribe en la
+ * pantalla en orden inverso al introducido.
  */
 int main() {
     cout << "Introduzca un número positivo: ";

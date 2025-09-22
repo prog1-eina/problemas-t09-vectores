@@ -1,4 +1,4 @@
-/******************************************************************************\
+/******************************************************************************
  * Curso de Programación 1. Tema 9
  * Autores: Javier Martínez y Miguel Ángel Latre
  * Última revisión: 30 de octubre de 2019
@@ -14,7 +14,7 @@
  *       o, en Windows,
  *           .\superiores-media.exe
  *       o ejecutar la tarea "Ejecutar programa «superiores-media»" de VSC.
-\******************************************************************************/
+ *****************************************************************************/
 #include <iostream>
 #include "leer-vector-reales.hpp"
 using namespace std;
@@ -53,9 +53,8 @@ unsigned contarSuperiores(const double datos[], const unsigned n,
 
 /*
  * Programa que solicita al usuario, en primer lugar, un número positivo «n»,
- * luego solicita «n» datos de tipo real y por último, escribe en la pantalla el
- * valor medio de los datos introducidos y cuántos de ellos son superiores a la
- * media.
+ * luego solicita «n» datos de tipo real y por último los escribe en la
+ * pantalla en orden inverso al introducido.
  */
 int main() {
     cout << "Introduzca un número positivo: ";

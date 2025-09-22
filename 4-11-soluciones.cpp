@@ -1,4 +1,4 @@
-﻿/******************************************************************************\
+﻿/******************************************************************************
  * Curso de Programación 1. Tema 9
  * Autores: Javier Martínez y Miguel Ángel Latre
  * Última revisión: 31 de octubre de 2022
@@ -13,12 +13,12 @@
  *           .\4-11-soluciones.exe
  *       o en Linux y macOS
  *           ./4-11-soluciones
-\******************************************************************************/
+ *****************************************************************************/
 #include <iostream>
 using namespace std;
 
 
-/********************************** Problema 4 ********************************/
+/********************************* Problema 4 ********************************/
 /*
  * Pre:  El vector «v» tiene al menos «n» componentes.
  * Post: Devuelve el número de datos positivos almacenados en las
@@ -35,25 +35,26 @@ unsigned numPositivos(const int v[], const unsigned n) {
 }
 
 
-/********************************** Problema 5 ********************************/
+/********************************* Problema 5 ********************************/
 /* No se publica la solución a este problema, puesto que es uno de los que se
  * pide en la práctica 4.
  */
 
 
-/********************************** Problema 6 ********************************/
+/********************************* Problema 6 ********************************/
 /* No se publica la solución a este problema, puesto que es uno de los que se
  * pide en la práctica 4.
  */
 
 
-/********************************** Problema 7 ********************************/
+/********************************* Problema 7 ********************************/
 /*
  * Pre:  El vector «v» tiene «n» componentes y se cumple que 0 ≤ i < n.
  * Post: Devuelve el número de veces que está repetido el dato
  *       «i»-ésimo del vector «v».
  */
-unsigned numeroRepeticiones(const int v[], const unsigned i, const unsigned n) {
+unsigned numeroRepeticiones(const int v[], const unsigned i,
+                            const unsigned n) {
     unsigned repeticiones = 0;
     for (unsigned j = 0; j < n; j++) {
         if (v[i] == v[j]) {
@@ -83,7 +84,7 @@ int moda(const int v[], const unsigned n) {
 }
 
 
-/********************************** Problema 8 ********************************/
+/********************************* Problema 8 ********************************/
 /*
  * Pre:  El vector «datos» tiene «n» componentes.
  * Post: Devuelve el valor true si y solo si un dato igual al valor del
@@ -100,7 +101,7 @@ bool esta(const int datos[], const unsigned n, const int buscado) {
 }
 
 
-/********************************** Problema 9 ********************************/
+/********************************* Problema 9 ********************************/
 /*
  * Pre:  El vector «v» tiene «n» componentes.
  * Post: Devuelve true si y solo si los datos del vector «v» están ordenados
@@ -120,7 +121,7 @@ bool estaOrdenada(const int v[], const unsigned n) {
 }
 
 
-/********************************* Problema 10 ********************************/
+/******************************** Problema 10 ********************************/
 /*
  * Pre:  El vector «v» tiene al menos «n» componentes; sea Np
  *       el número de datos positivos del vector «v»: el vector «p» tiene
@@ -142,7 +143,7 @@ void copiaPositivos(const int T[], const unsigned n,
 }
 
 
-/********************************* Problema 11 ********************************/
+/******************************** Problema 11 ********************************/
 /*
  * Pre:  El vector «secuencia» tiene «longitud» componentes.
  * Post: Escribe en el vector «secuencia» los primeros «longitud»
@@ -185,7 +186,7 @@ void kolakoski(unsigned secuencia[], const unsigned longitud) {
 }
 
 
-/************************** Código para las pruebas ***************************/
+/************************* Código para las pruebas ***************************/
 /*
  * Datos para las pruebas de «numPositivos», «copiar», «sonIguales» y
  * «copiaPositivos».
@@ -200,8 +201,8 @@ const int VECTOR_6[] = {-1, 2, -3, 4, -5, 6};
 
 
 /*
- * Prueba la función «numPositivos» con los datos anteriores. Si el resultado de
- * una prueba es correcto, escribe en la pantalla true; en caso contrario,
+ * Prueba la función «numPositivos» con los datos anteriores. Si el resultado
+ * de una prueba es correcto, escribe en la pantalla true; en caso contrario,
  * escribe en la pantalla false.
  */
 void pruebaNumPositivos() {
@@ -228,10 +229,12 @@ void pruebaModa() {
     cout << "Pruebas de la función «moda»: " << endl;    
     cout << boolalpha;
 
-    const int T1[] = {4, 7, 5, 5, 1, 7, 6, 9, 2, 2, 5, 0, 7, 9, 5, 6, 5, 0, 8, 0, 2};
+    const int T1[] = {4, 7, 5, 5, 1, 7, 6, 9, 2, 2, 5, 0, 7, 9, 5, 6, 5, 0, 8,
+                      0, 2};
     cout << (moda(T1, 21) == 5) << endl;
 
-    const int T2[] = {1, 5, 8, 6, 8, 3, 4, 6, 6, 1, 5, 8, 1, 9, 5, 9, 5, 8, 9, 2, 9};
+    const int T2[] = {1, 5, 8, 6, 8, 3, 4, 6, 6, 1, 5, 8, 1, 9, 5, 9, 5, 8, 9,
+                      2, 9};
     int m = moda(T2, 21);
     cout << (m == 5 || m == 8 || m == 9) << endl;
 }
@@ -344,7 +347,8 @@ void pruebaKolakoski() {
 
 /*
  * Programa que realiza pruebas de las funciones «numPositivos», «copiar»,
- * «sonIguales», «moda», «esta», «estaOrdenada», «copiaPositivos» y «kolakoski».
+ * «sonIguales», «moda», «esta», «estaOrdenada», «copiaPositivos» y
+ * «kolakoski».
  */
 int main() {
     pruebaNumPositivos();

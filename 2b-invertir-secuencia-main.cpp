@@ -1,4 +1,4 @@
-﻿/******************************************************************************\
+﻿/******************************************************************************
  * Curso de Programación 1. Tema 9
  * Autores: Javier Martínez y Miguel Ángel Latre
  * Última revisión: 4 de noviembre de 2020
@@ -14,7 +14,7 @@
  *       o, en Windows,
  *           .\invertir-secuencia.exe
  *       o ejecutar la tarea "Ejecutar programa «invertir-secuencia»" de VSC.
-\******************************************************************************/
+ *****************************************************************************/
 #include <iostream>
 #include "leer-vector-reales.hpp"
 using namespace std;
@@ -46,8 +46,8 @@ void escribirDatosAlReves(const double datos[], const unsigned n) {
 
 /*
  * Programa que solicita al usuario, en primer lugar, un número positivo «n»,
- * luego solicita «n» datos de tipo real y por último los escribe en la pantalla
- * en orden inverso al introducido.
+ * luego solicita «n» datos de tipo real y por último los escribe en la
+ * pantalla en orden inverso al introducido.
  */
 int main() {
     cout << "Introduzca un número positivo: ";
