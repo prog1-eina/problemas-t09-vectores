@@ -1,5 +1,5 @@
 CXX = g++
-CXXFLAGS = -g -Wall -Wextra
+CXXFLAGS = -Og -Wall -Wextra
 
 invertir-secuencia: 2b-invertir-secuencia-main.o leer-vector-reales.o
 	$(CXX) $(CXXFLAGS) -o invertir-secuencia 2b-invertir-secuencia-main.o leer-vector-reales.o
